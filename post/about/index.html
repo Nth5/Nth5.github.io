@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于我 | 谁人话必须要读过书</title>
+<link rel="shortcut icon" href="https://Nth5.github.io/favicon.ico?v=1755831249992">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Nth5.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于我 | 谁人话必须要读过书 - Atom Feed" href="https://Nth5.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+你好，我是小啾。
+笔名和社交平台的常用ID是Nth5，喜欢写小情小爱的女人。
+喜欢当互联网幽灵，很喜欢随地大小死，最近打算活得长一些。
+已经决定把余生奉献给同人和杀戮尖塔了。
+有一只很可爱的博美串串狗。
+喜欢下雨。
+🔵该博客会出现
+博主..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Nth5.github.io">
+  <img class="avatar" src="https://Nth5.github.io/images/avatar.png?v=1755831249992" alt="">
+  </a>
+  <h1 class="site-title">
+    谁人话必须要读过书
+  </h1>
+  <p class="site-description">
+    酒真好喝啊！
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于我
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-06-17
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <center>
+<p>你好，我是小啾。<br>
+笔名和社交平台的常用ID是Nth5，喜欢写小情小爱的女人。<br>
+喜欢当互联网幽灵，很喜欢随地大小死，最近打算活得长一些。<br>
+已经决定把余生奉献给同人和杀戮尖塔了。<br>
+有一只很可爱的博美串串狗。<br>
+喜欢下雨。</p>
+<p>🔵<strong>该博客会出现</strong><br>
+博主的二三次生活日记<br>
+部分自己写得很开心同人or原创的存档<br>
+创作日后谈<br>
+各种学习记录</p>
+<p>🔴<strong>可以在这里找到我</strong><br>
+提问箱：https://pome.vip/e3b84c4d79<br>
+播客：小宇宙-怪味甜点<br>
+微博：Nth5_mr<br>
+AO3：ALzoni</p>
+</center>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Nth5.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
