@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>🐕 | Nth5</title>
+<link rel="shortcut icon" href="https://Nth5.github.io/favicon.ico?v=1787050563440">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Nth5.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="🐕 | Nth5 - Atom Feed" href="https://Nth5.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+名字：桃桃
+性别：女孩
+出生时间：2023.07
+爱称：桃皇、桃桃殿下、女明星、狗儿、小鼻屎（增加中）
+ps:照片太多了发不完，先搬一点（2026/07/08）
+
+
+
+
+
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Nth5.github.io">
+  <img class="avatar" src="https://Nth5.github.io/images/avatar.png?v=1787050563440" alt="">
+  </a>
+  <h1 class="site-title">
+    Nth5
+  </h1>
+  <p class="site-description">
+     就算世界毁灭，我也一定会让你一个人逃到宇宙去。 
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://Nth5.github.io/post/mylove" class="menu">
+          🐕
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              🐕
+            </h2>
+            <div class="post-info">
+              <span>
+                2026-08-17
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>名字：桃桃<br>
+性别：女孩<br>
+出生时间：2023.07<br>
+爱称：桃皇、桃桃殿下、女明星、狗儿、小鼻屎（增加中）<br>
+ps:照片太多了发不完，先搬一点（2026/07/08）</p>
+</blockquote>
+<p><img src="https://Nth5.github.io/post-images/1786980582556.webp" alt="" loading="lazy"><br>
+<img src="https://Nth5.github.io/post-images/1786980791171.webp" alt="" loading="lazy"><br>
+<img src="https://Nth5.github.io/post-images/1786980802025.webp" alt="" loading="lazy"><br>
+<img src="https://Nth5.github.io/post-images/1786980808737.webp" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  <div class="site-footer-info">
+  <div class="footer-line"></div>
+
+  <div class="footer-status">
+    <span>© 2026 Nth5</span>
+    <span>STATUS: ONLINE</span>
+    <span>LAST UPDATE: 2026.08</span>
+    <span>NO COOKIES / NO TRACKING</span>
+  </div>
+</div>
+  <a class="rss" href="https://Nth5.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
